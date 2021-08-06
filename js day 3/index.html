@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(94deg,rgba(58, 194, 218, 0.5),rgba(0, 30, 199, 0.5))
+        }
+        form{
+            width:500px;
+            height:300px;
+        }
+        input[type=text]{
+            padding: 4px ;
+            width:300px;
+            outline: none;
+            border: 0px;
+        }
+        #usercity{
+            margin-left: 17px;
+        }
+        #username{
+            margin-left: 10px;
+        }
+        #user1 {
+            margin-top: 50px;
+            margin-left: -120px;
+        }
+        #user2{
+            margin-left: -100px;
+        }
+        button{
+            margin-top: 30px;
+            padding: 7px 29px;
+            outline: none;
+            border: 0px;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color:rgb(255, 252, 69);
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Assignment Day 3</h1></center>
+    <center>
+        <form style= "margin-top:60px;" action="" autocomplete="off">
+            <label id="label" for="username">
+                Name : <input type="text" id="username" placeholder="Username" required>
+            </label><br><br>
+            <label for="usercity">
+                City : <input type="text" id="usercity" placeholder="city" required>
+            </label>
+            <p id="user1">1.The User Name is : </p>
+            <p id="user2">2.The User Belongs To : </p>
+            <button type="button" onClick="add()">Add</button>
+            <button  onClick="clear()" >Reset</button>
+        </form>     
+    </center>
+    <script src="index3.js"></script>
+</body>
+</html>
